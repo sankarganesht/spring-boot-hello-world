@@ -1,0 +1,14 @@
+# Spring Boot
+target/
+*.class
+
+# Maven
+.mvn/repository
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Claude
+.claude/

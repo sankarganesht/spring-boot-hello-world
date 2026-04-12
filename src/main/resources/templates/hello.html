@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        input[type="text"] {
+            padding: 0.6rem 1rem;
+            font-size: 1rem;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            width: 250px;
+        }
+        input[type="text"]:focus {
+            border-color: #4a90e2;
+        }
+        button {
+            padding: 0.6rem 1.2rem;
+            font-size: 1rem;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+        button:hover {
+            background-color: #357abd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 th:text="${name != null && !name.isEmpty()} ? 'Hello, ' + ${name} + '!' : 'Hello World'">Hello World</h1>
+        <form method="get" action="/">
+            <input type="text" name="name" th:value="${name}" placeholder="Enter your name" autofocus />
+            <button type="submit">Say Hello</button>
+        </form>
+    </div>
+</body>
+</html>
