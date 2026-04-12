@@ -30,11 +30,44 @@ interface MainContentProps {
   };
 }
 
+const DEFAULT_INITIAL_DATA = {
+  "/App.jsx": {
+    type: "file",
+    content: `import Card from 'Card';
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-8">
+      <Card
+        title="Hello, World!"
+        description="This is a sample card component with a title and description. You can ask the AI to customize it however you like."
+      />
+    </div>
+  );
+}`,
+  },
+  "/Card.jsx": {
+    type: "file",
+    content: `export default function Card({ title, description }) {
+  return (
+    <div className="max-w-sm rounded-2xl shadow-md border border-gray-200 bg-white p-6 hover:shadow-lg transition-shadow duration-300">
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
+      <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
+    </div>
+  );
+}`,
+  },
+};
+
 export function MainContent({ user, project }: MainContentProps) {
   const [activeView, setActiveView] = useState<"preview" | "code">("preview");
 
+  const initialData = project?.data && Object.keys(project.data).length > 0
+    ? project.data
+    : DEFAULT_INITIAL_DATA;
+
   return (
-    <FileSystemProvider initialData={project?.data}>
+    <FileSystemProvider initialData={initialData}>
       <ChatProvider projectId={project?.id} initialMessages={project?.messages}>
         <div className="h-screen w-screen overflow-hidden bg-neutral-50">
           <ResizablePanelGroup direction="horizontal" className="h-full">

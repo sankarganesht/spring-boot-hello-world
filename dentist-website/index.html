@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrightSmile Dental | Your Family Dentist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">&#9670;</span> BrightSmile Dental
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact" class="btn-nav">Book Appointment</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#testimonials" onclick="closeMenu()">Testimonials</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="badge">Accepting New Patients</span>
+      <h1>A Healthy Smile<br />Starts Here</h1>
+      <p>Comprehensive, compassionate dental care for every member of your family — from your first tooth to your golden years.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Book an Appointment</a>
+        <a href="#services" class="btn-outline">Our Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>15+</strong><span>Years Experience</span></div>
+        <div class="stat"><strong>5,000+</strong><span>Happy Patients</span></div>
+        <div class="stat"><strong>4.9&#9733;</strong><span>Average Rating</span></div>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div class="hero-image">
+        <div class="hero-illustration">
+          <div class="tooth">&#9670;</div>
+          <div class="circle c1"></div>
+          <div class="circle c2"></div>
+          <div class="circle c3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">What We Offer</span>
+        <h2>Our Dental Services</h2>
+        <p>We provide a full range of dental treatments using modern techniques and technology.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">&#128140;</div>
+          <h3>General Dentistry</h3>
+          <p>Routine exams, cleanings, fillings, and preventive care to keep your teeth healthy for life.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#10024;</div>
+          <h3>Teeth Whitening</h3>
+          <p>Professional in-office and take-home whitening treatments for a brighter, confident smile.</p>
+        </div>
+        <div class="service-card featured">
+          <div class="service-icon">&#128247;</div>
+          <h3>Orthodontics</h3>
+          <p>Traditional braces and clear aligner options to straighten teeth at any age.</p>
+          <span class="tag">Popular</span>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128142;</div>
+          <h3>Dental Implants</h3>
+          <p>Permanent, natural-looking replacements for missing teeth that restore full function.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128118;</div>
+          <h3>Pediatric Dentistry</h3>
+          <p>Gentle, kid-friendly dental care in a fun and welcoming environment.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128736;</div>
+          <h3>Emergency Care</h3>
+          <p>Same-day appointments available for dental emergencies — we're here when you need us most.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <div class="about-image">
+        <div class="about-illustration">
+          <div class="doc-avatar">
+            <div class="avatar-head"></div>
+            <div class="avatar-body"></div>
+            <div class="stethoscope"></div>
+          </div>
+          <div class="about-badge">
+            <strong>Dr. Sarah Mitchell</strong>
+            <span>DDS, FAGD</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-label">About Us</span>
+        <h2>Dentistry Built on Trust &amp; Care</h2>
+        <p>BrightSmile Dental has been serving our community for over 15 years. Led by Dr. Sarah Mitchell, our team is committed to providing personalized care in a comfortable, anxiety-free environment.</p>
+        <p>We use the latest digital imaging, laser dentistry, and minimally invasive techniques so every visit is as quick and painless as possible.</p>
+        <ul class="about-list">
+          <li>&#10003; Digital X-rays &amp; 3D imaging</li>
+          <li>&#10003; Sedation dentistry available</li>
+          <li>&#10003; Flexible payment &amp; financing plans</li>
+          <li>&#10003; Most insurance plans accepted</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Meet the Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Patient Stories</span>
+        <h2>What Our Patients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Dr. Mitchell and her team are absolutely wonderful. I've always been anxious about dentist visits, but they made me feel completely at ease. My smile has never looked better!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">JL</div>
+            <div>
+              <strong>Jessica L.</strong>
+              <span>Patient since 2019</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card highlight">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Best dental experience I've ever had. The office is modern, the staff is friendly, and they explained everything clearly. I recommend BrightSmile to everyone I know."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">MR</div>
+            <div>
+              <strong>Marcus R.</strong>
+              <span>Patient since 2021</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"My kids actually look forward to coming here! The pediatric team is so patient and kind. We're a BrightSmile family for life."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">AP</div>
+            <div>
+              <strong>Amy P.</strong>
+              <span>Patient since 2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <span class="section-label">Get In Touch</span>
+        <h2>Book Your Appointment</h2>
+        <p>New and returning patients are always welcome. Contact us today to schedule your visit.</p>
+        <div class="info-items">
+          <div class="info-item">
+            <div class="info-icon">&#128205;</div>
+            <div>
+              <strong>Address</strong>
+              <span>123 Main Street, Suite 200<br />Springfield, IL 62701</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">&#128222;</div>
+            <div>
+              <strong>Phone</strong>
+              <span>(555) 123-4567</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">&#128337;</div>
+            <div>
+              <strong>Office Hours</strong>
+              <span>Mon–Fri: 8am – 6pm<br />Sat: 9am – 2pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+        <h3>Request an Appointment</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Jane" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Doe" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="jane@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="(555) 000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service">
+            <option value="">Select a service...</option>
+            <option>General Check-up &amp; Cleaning</option>
+            <option>Teeth Whitening</option>
+            <option>Orthodontics</option>
+            <option>Dental Implants</option>
+            <option>Pediatric Dentistry</option>
+            <option>Emergency Care</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Additional Notes</label>
+          <textarea id="message" rows="3" placeholder="Any questions or special requests?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">Send Request</button>
+        <div id="successMsg" class="success-msg" style="display:none;">
+          &#10003; Thank you! We'll be in touch within one business day.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">&#9670;</span> BrightSmile Dental
+        </a>
+        <p>Compassionate dental care for your whole family.</p>
+      </div>
+      <div class="footer-links">
+        <strong>Quick Links</strong>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <strong>Services</strong>
+        <ul>
+          <li><a href="#services">General Dentistry</a></li>
+          <li><a href="#services">Teeth Whitening</a></li>
+          <li><a href="#services">Orthodontics</a></li>
+          <li><a href="#services">Dental Implants</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BrightSmile Dental. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
