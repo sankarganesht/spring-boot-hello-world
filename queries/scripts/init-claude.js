@@ -13,7 +13,9 @@ try {
   const templateContent = fs.readFileSync(templatePath, "utf8");
 
   // Replace all instances of $PWD with the actual working directory
-  const processedContent = templateContent.replace(/\$PWD/g, pwd);
+  // Use forward slashes to ensure valid JSON on Windows
+  const pwdForJson = pwd.replace(/\\/g, "/");
+  const processedContent = templateContent.replace(/\$PWD/g, pwdForJson);
 
   // Parse to validate JSON (optional but recommended)
   JSON.parse(processedContent);
